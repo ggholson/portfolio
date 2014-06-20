@@ -1,0 +1,80 @@
+<!doctype html>
+<head>
+  <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+  </style>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="jquery.slides.min.js"></script>
+
+  <script>
+    $(function(){
+      $("#slides2").slidesjs({
+        width: 1000,
+        height: 1000,
+        play: {
+          active: false,
+          // [boolean] Generate the play and stop buttons.
+          // You cannot use your own buttons. Sorry.
+          effect: "slide",
+          // [string] Can be either "slide" or "fade".
+          interval: 5000,
+          // [number] Time spent on each slide in milliseconds.
+          auto: true,
+          // [boolean] Start playing the slideshow on load.
+          swap: true,
+          // [boolean] show/hide stop and play buttons
+          pauseOnHover: false,
+          // [boolean] pause a playing slideshow on hover
+          restartDelay: 2500
+          // [number] restart delay on inactive slideshow
+        },
+        pagination: {
+          active: false,
+          // [boolean] Create pagination items.
+          // You cannot use your own pagination. Sorry.
+          effect: "slide"
+          // [string] Can be either "slide" or "fade".
+        },
+        navigation: {
+          active: false,
+          // [boolean] Generates next and previous buttons.
+          // You can set to false and use your own buttons.
+          // User defined buttons must have the following:
+          // previous button: class="slidesjs-previous slidesjs-navigation"
+          // next button: class="slidesjs-next slidesjs-navigation"
+          effect: "slide"
+          // [string] Can be either "slide" or "fade".
+        },
+        callback: {
+          loaded: function(number) {
+              
+          },
+          start: function(number) {
+            setSlide(number,2);
+        // Do something awesome!
+        // Passes slide number at start of animation
+
+          },
+          complete: function(number) {
+
+        // Do something awesome!
+        // Passes slide number at end of animation
+          }
+        }
+      });
+});
+  </script>
+</head>
+
+<body>
+  <div id="slides2">
+    <img src="/nodejs.jpeg">
+    <img src="http://www.indiegamestock.com/uploads/submissions/active/264/image01.gif" id="dino">
+    
+  </div>
+</body>
+

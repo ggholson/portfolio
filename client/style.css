@@ -1,0 +1,166 @@
+html, body{
+    min-height:100%;
+}
+
+img{
+    z-index:100;
+}
+
+.ipanel {
+    height: 600px;
+    position: relative;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+#sheader{
+	height:100px;
+	background-color: #A5A5A5;
+	color: #000447;
+    position: relative;
+    
+}
+
+.headertext{
+    position: absolute;
+    right:10px;
+}
+
+.panelheader{
+    font-weight:400;
+}
+.panelbody{
+    position: absolute;
+    left:100px;
+    width:500px;
+    font-size: 18px;
+    font-weight:300;
+}
+
+#s1{
+	background-color: #0D125F;
+    color: #A5A5A5;
+    border-left: solid #A5A5A5 3px;
+    border-right: solid #A5A5A5 3px;
+}
+
+#s2{
+	background-color: #333676;
+    color: #A5A5A5;
+    border-left: solid #A5A5A5 3px;
+    border-right: solid #A5A5A5 3px;
+}
+
+#s3{
+	background-color: #0D125F;
+    color: #A5A5A5;
+    border-left: solid #A5A5A5 3px;
+    border-right: solid #A5A5A5 3px;
+    border-bottom: solid #A5A5A5 3px;
+}
+
+#sfooter{
+    height: 200px;
+}
+
+#window{
+	position: fixed;
+    height: 350px;
+    width: 350px;
+    top: 120px;
+    left: 66%;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+#slide1, #slide2, #slide3{
+    height:320px;
+    width:320px;
+}
+
+#overlaybutton{
+    top:350px;
+    left:125px;
+    position: absolute;
+}
+
+.windowheader{
+    color:white;
+    font-size: 24px;
+}
+
+.windowitem{
+    font-size: 16px;
+    list-style-type: square;
+}
+
+.slideup{
+    position:absolute;
+    top:-300px;
+    opacity: 0;
+    -webkit-transition: top 1s, opacity 1s;
+    -o-transition: top 1s, opacity 1s;
+    transition: top 1s, opacity 1s;
+}
+
+.slide{
+    top:0;
+    opacity:1;
+    -webkit-transition: top 1s, opacity 1s;
+    -o-transition: top 1s, opacity 1s;
+    transition: top 1s, opacity 1s;
+}
+
+.slidedown{
+    position:absolute;
+    top:300px;
+    opacity: 0;
+    -webkit-transition: top 1s, opacity 1s;
+    -o-transition: top 1s, opacity 1s;
+    transition: top 1s, opacity 1s;
+}
+
+.slidehidet{
+    position: absolute;
+    opacity:0;
+    top:-300px;
+}
+.slidehideb{
+    position: absolute;
+    opacity:0;
+    top:300px;
+}
+
+#overlay {
+    background-color: black;
+    opacity: 0;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    border-radius: 50px;
+    transition: opacity 1s;
+}
+
+.btnclose{
+    position: absolute;
+    top:25px;
+    right:25px;
+    border-radius: 25px;
+}
+
+#overlaywindow{
+    position: absolute;
+    height:100%;
+    right:100px;
+    left:100px;
+    z-index:2;
+    opacity: 1;
+    color: white;
+}
+
+.overlayshow{
+    opacity:.9 !important;
+    transition: opacity 1s;
+    z-index:100 !important;
+}
