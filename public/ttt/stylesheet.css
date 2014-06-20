@@ -1,0 +1,35 @@
+html,body{
+	top:100px;
+	height:300px;
+	width:300px;
+	margin: auto;
+}
+
+#header{
+	height:100px;
+	width:100%;
+	font-size:48px;
+	text-align: center;
+
+}
+.square{
+	height:100px;
+	width: 100px;
+	border: 5px solid black;
+	font-size:72px;
+	text-align:center;
+	vertical-align: center;
+}
+.buttonHolder{
+	height:100px;
+	width: 100px;
+	text-align:center;
+	vertical-align: center;
+}
+
+button{
+	position:relative;
+	top:20px;
+	margin:auto;
+	opacity: 0;
+}
