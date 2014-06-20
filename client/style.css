@@ -27,7 +27,8 @@ img{
 }
 
 .panelheader{
-    font-weight:400;
+    font-weight:700;
+    color:white;
 }
 .panelbody{
     position: absolute;
@@ -68,8 +69,8 @@ img{
     height: 350px;
     width: 350px;
     top: 120px;
-    left: 66%;
-    border: 5px solid black;
+    left: 65%;
+    border: 5px solid white;
     padding: 10px;
 }
 
